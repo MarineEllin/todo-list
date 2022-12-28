@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  --dark-medium: #2f4858;
+  --dark-dark: #0f222c;
+  --grey-medium: #c8bebd;
+  --grey-light: #fcfcfc;
+  --color-dark: #d19f9c;
+  --color: #f9d9d7;
+  --color-light: #fff5f4;
+  --color-peps: #ef6367;
+  --font-todo: "Covered By Your Grace", cursive;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-light);
+}
+
+h1 {
+  color: var(--dark-dark);
+  margin: 4rem 0;
+  font-family: var(--font-todo);
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 0.8rem;
+}
+
+p {
+  margin: 0;
+  font-family: "Covered By Your Grace", cursive;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+}
+
+.container {
+  width: 600px;
+  padding: 30px;
+  border: 2px solid var(--color-dark);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+}
+
+form input {
+  flex: 1;
+  font-family: var(--font-todo);
+  font-size: 1.4rem;
+}
+
+input {
+  outline: none;
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  background: var(--grey-light);
+  line-height: 2rem;
+  margin-right: 0.5rem;
+}
+
+button {
+  border: 1px solid var(--color-peps);
+  border-radius: 3px;
+  background: #ef6367;
+  line-height: 2rem;
+  cursor: pointer;
+  width: 75px;
+  margin: 0 0.3rem;
+}
+
+ul {
+  list-style: none;
+  margin: 2rem 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+li p {
+  flex: 1;
+}
+
+li .todo {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-peps);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+li .todo.done {
+  background: #ef6367;
+}
+
+li input {
+  flex: 1;
+  margin-right: 0.5rem;
+  font-family: var(--font-todo);
+  font-size: 1.4rem;
+}
+
+.editButton {
+  background: #f9d9d7;
+  font-style: italic;
+}
